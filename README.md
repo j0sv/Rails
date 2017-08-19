@@ -44,8 +44,8 @@
 
   Create database
   ```
-  rails db:create
-  rails db:migrate
+  $ rails db:create
+  $ rails db:migrate
   ```
   
 4. Add configurations
