@@ -8,15 +8,14 @@
   * The --skip-test option skips configuring for the default testing tool.
   * The --skip-bundle option prevents the generator from running bundle install automatically.  
 
-2. Configuring the rails application  
-  This will add:
+2. Adding gems:
   * [rspec](https://github.com/rspec/rspec-rails) - for unit test
   * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) - to get shorter syntax in rspec test
   * [factory_girl_rails](https://github.com/thoughtbot/factory_girl) - to create inctances of object in test
   * [cucumber](https://github.com/cucumber/cucumber-rails) - for acceptance test
   * [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner) - will remove data added during automated test execution
   
-  Include by adding to the file: `gemfile`
+  Include this by adding to the file: `gemfile`
 
   ```
   group :development, :test do
