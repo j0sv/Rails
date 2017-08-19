@@ -31,7 +31,25 @@
   end
   ``` 
 
-  Run `$ bundle install` to install the added gems:
+  Run `$ bundle install` to install the added gems.
+  
+3. Initiate test tools installed above and create database
+
+  Run the RSpec generator to add the testing framework to your rails application
+
+  ```
+  $ bundle exec rails generate rspec:install
+  $ bundle exec rails generate cucumber:install
+  ```
+
+  Create database
+  ```
+  rails db:create
+  rails db:migrate
+  ```
+  
+4. Add configurations
+  
   * Shoulda-matchers configuration added to `spec/rails_helper.rb`
 
   ```
@@ -66,22 +84,8 @@
   --color
   --format documentation
   ```
-3. Initiate test tools installed above and create database
 
-  Run the RSpec generator to add the testing framework to your rails application
-
-  ```
-  $ bundle exec rails generate rspec:install
-  $ bundle exec rails generate cucumber:install
-  ```
-
-  Create database
-  ```
-  rails db:create
-  rails db:migrate
-  ```
-  
-4. Verify test tool configuration
+5. Verify test tool configuration
 
   Run `$ bundle exec rspec`. The output you see should be something like:
 
